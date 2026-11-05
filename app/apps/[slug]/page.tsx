@@ -12,12 +12,12 @@ export default function AppPage({ params, searchParams }: { params: { slug: stri
   if (!app) notFound();
   const src = `/bundles/${app.slug}/index.html${searchParams?.webgl !== undefined ? "?webgl" : ""}`;
   return (
-    <main style={{ height: "100vh", display: "flex", flexDirection: "column" }}>
-      <header style={{ display: "flex", gap: 12, alignItems: "center", padding: "8px 16px", borderBottom: "1px solid #333" }}>
+    <main style={{ height: "100vh", display: "flex", flexDirection: "column", background: "#101216" }}>
+      <header className="appbar">
         <a href="/">← All apps</a>
         <strong>{app.title}</strong>
-        <small style={{ color: "#666" }}>{app.tag}</small>
-        <a href={src} style={{ marginLeft: "auto" }}>Reload</a>
+        <small>{app.tag}</small>
+        <a href={src} className="spacer">Reload</a>
       </header>
       <iframe src={src} title={app.title} allow="fullscreen; clipboard-read; clipboard-write" allowFullScreen style={{ flex: 1, width: "100%", border: 0 }} />
     </main>

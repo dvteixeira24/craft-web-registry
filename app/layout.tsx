@@ -1,3 +1,5 @@
+import "./globals.css";
+
 export const metadata = { title: "Craft Web Registry", description: "Storytold Craft apps on the web" };
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
