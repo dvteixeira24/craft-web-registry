@@ -1,0 +1,17 @@
+[
+  { "slug": "photocraft", "repo": "storytold/photocraft", "tag": "v0.20.2", "title": "PhotoCraft", "blurb": "Photo editor" },
+  { "slug": "pdfcraft", "repo": "storytold/pdfcraft", "tag": "v0.18.2", "title": "PdfCraft", "blurb": "PDF reader and editor" },
+  { "slug": "filmcraft", "repo": "storytold/filmcraft", "tag": "v0.17.1", "title": "FilmCraft", "blurb": "Nonlinear video editor" },
+  { "slug": "vectorcraft", "repo": "storytold/vectorcraft", "tag": "v0.21.1", "title": "VectorCraft", "blurb": "Vector art tool" },
+  { "slug": "lightcraft", "repo": "storytold/lightcraft", "tag": "v0.18.1", "title": "LightCraft", "blurb": "Nondestructive photo editor" },
+  { "slug": "designcraft", "repo": "storytold/designcraft", "tag": "v0.17.2", "title": "DesignCraft", "blurb": "Page and layout design" },
+  { "slug": "effectcraft", "repo": "storytold/effectcraft", "tag": "v0.21.1", "title": "EffectCraft", "blurb": "Motion graphics and compositing" },
+  { "slug": "gridcraft", "repo": "storytold/gridcraft", "tag": "v0.16.1", "title": "GridCraft", "blurb": "Spreadsheet" },
+  { "slug": "cadcraft", "repo": "storytold/cadcraft", "tag": "v0.17.1", "title": "CadCraft", "blurb": "CAD and drafting" },
+  { "slug": "deckcraft", "repo": "storytold/deckcraft", "tag": "v0.15.1", "title": "DeckCraft", "blurb": "Presentations" },
+  { "slug": "soundcraft", "repo": "storytold/soundcraft", "tag": "v0.17.1", "title": "SoundCraft", "blurb": "Pro audio workstation" },
+  { "slug": "wordcraft", "repo": "storytold/wordcraft", "tag": "v0.15.2", "title": "WordCraft", "blurb": "Word processor" },
+  { "slug": "figcraft", "repo": "storytold/figcraft", "tag": "v0.15.1", "title": "FigCraft", "blurb": "Interface design and prototyping" },
+  { "slug": "texturecraft", "repo": "storytold/texturecraft", "tag": "v0.3.2", "title": "TextureCraft", "blurb": "3D texture painting" },
+  { "slug": "materialcraft", "repo": "storytold/materialcraft", "tag": "v0.1.2", "title": "MaterialCraft", "blurb": "Node-based material designer" }
+]

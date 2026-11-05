@@ -1,0 +1,6 @@
+services:
+  web:
+    image: ghcr.io/storytold/craft-web-registry:latest
+    ports:
+      - "3000:3000"
+    restart: unless-stopped

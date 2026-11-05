@@ -278,7 +278,7 @@ git commit -m "feat: fetch 15 Craft web bundles at build time"
 - [ ] **Step 1: Write app/page.tsx**
 
 ```tsx
-import apps from "../../apps.json";
+import apps from "../apps.json";
 
 export default function Home() {
   return (
