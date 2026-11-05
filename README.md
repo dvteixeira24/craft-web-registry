@@ -16,7 +16,7 @@ npm run dev
 ## VPS
 
 ```sh
-docker compose pull
+docker compose pull   # ghcr.io/dvteixeira24/craft-web-registry:latest
 docker compose up -d
 # open http://<vps>:3000
 ```

@@ -23,6 +23,6 @@ jobs:
           context: .
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: ghcr.io/storytold/craft-web-registry:latest,ghcr.io/storytold/craft-web-registry:${{ github.ref_name }}
+          tags: ghcr.io/dvteixeira24/craft-web-registry:latest,ghcr.io/dvteixeira24/craft-web-registry:${{ github.ref_name }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
