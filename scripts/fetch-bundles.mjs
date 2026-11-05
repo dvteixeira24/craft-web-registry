@@ -1,4 +1,4 @@
-import { createWriteStream, existsSync, mkdirSync, rmSync, readdirSync, renameSync, writeFileSync, readFileSync } from "node:fs";
+import { createWriteStream, existsSync, mkdirSync, rmSync, readdirSync, renameSync, writeFileSync, readFileSync, cpSync } from "node:fs";
 import { readFile } from "node:fs/promises";
 import { execSync } from "node:child_process";
 import { get } from "node:https";
@@ -39,6 +39,12 @@ for (const app of apps) {
   for (const e of readdirSync(inner)) renameSync(path.join(inner, e), path.join(slugDir, e));
   rmSync(tmp, { recursive: true, force: true });
   if (!existsSync(path.join(slugDir, "index.html"))) throw new Error(`${app.slug}: index.html missing after unzip`);
+  // Upstream packaging relocates the app glue into app/ but leaves its
+  // Trunk snippets/ at the bundle root, so the glue's ./snippets/* imports
+  // 404. Mirror snippets next to the glue (kept at root too: harmless).
+  if (existsSync(path.join(slugDir, "app")) && existsSync(path.join(slugDir, "snippets"))) {
+    cpSync(path.join(slugDir, "snippets"), path.join(slugDir, "app", "snippets"), { recursive: true });
+  }
   rmSync(dest, { force: true });
   writeFileSync(tagFile, wantTag + "\n");
   console.log(`ok ${app.slug}`);
